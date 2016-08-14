@@ -37,7 +37,7 @@ function viewCart(){
   else{
     for(var i=0; i < cart.length; i++){
       for (var item in cart[i]){
-        output+=`${item} at $${cart[i][item]} `;
+        output+=`${item} at $${cart[i][item]}`;
       }
     }
     console.log("In your cart, you have " + output + ".");
