@@ -23,7 +23,7 @@ function getCart(){
 
 function addToCart(item){
   var price = Math.floor((Math.random() * 100) + 1);
-  var itemRec = {item: price};
+  var itemRec = {[item]: price};
   cart.push(itemRec);
   console.log (`${item} has been added to your cart.`);
   return cart;
@@ -40,7 +40,7 @@ function viewCart(){
         output+=`${item} at $${cart[i][item]}`;
       }
     }
-    console.log (`In your cart you have ${output} pairs.`);
+    console.log ("In your cart you have " + output + " pairs.");
   }
 };
 
