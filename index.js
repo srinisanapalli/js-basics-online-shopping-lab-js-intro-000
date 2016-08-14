@@ -46,6 +46,7 @@ function viewCart(){
 };
 
 function removeFromCart(item){
+
   var flag=false;
   for(var i=0; i < cart.length; i++){
     for (var prop in cart){
@@ -55,10 +56,12 @@ function removeFromCart(item){
       }
     }
   }
+
   if (!flag){
     console.log("That item is not in your cart.");
   }
   return cart;
+
 };
 
 function placeOrder(cardNumber){
