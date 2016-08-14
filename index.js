@@ -46,16 +46,20 @@ function viewCart(){
 };
 
 function removeFromCart(item){
-  
+  var flag=false;
   for(var i=0; i < cart.length; i++){
     for (var prop in cart){
       if(!cart[prop]==item){
-        console.log("That item is not in your cart.");
+        //console.log("That item is not in your cart.");
       }
       else{
+        flag=true;
         cart.splice(i,1);
       }
     }
+  }
+  if (!flag){
+    console.log("That item is not in your cart.");
   }
   return cart;
 };
