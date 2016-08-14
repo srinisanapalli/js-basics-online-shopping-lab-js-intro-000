@@ -30,7 +30,7 @@ function addToCart(item){
 };
 
 function viewCart(){
-  var output;
+  var output='';
   if (cart.length < 1){
     console.log("Your shopping cart is empty.");
   }
@@ -40,7 +40,7 @@ function viewCart(){
         output+=`${item} at $${cart[i][item]}`;
       }
     }
-    console.log("In your cart you have " + output + ".");
+    console.log("In your cart, you have " + output + ".");
   }
 };
 
