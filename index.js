@@ -30,16 +30,18 @@ function addToCart(item){
 };
 
 function viewCart(){
-  var output='';
+  var output=[];
   if (cart.length < 1){
     console.log("Your shopping cart is empty.");
   }
   else{
     for(var i=0; i < cart.length; i++){
       for (var item in cart[i]){
-        output+=`${item} at $${cart[i][item]}`;
+        //output+=`${item} at $${cart[i][item]}`;
+        output.push(`${item} at $${cart[i][item]}`);
       }
     }
+    vat string = output.join(, );
     console.log("In your cart, you have " + output + ".");
   }
 };
