@@ -42,7 +42,7 @@ function viewCart(){
       }
     }
     vat string = output.join(", ");
-    console.log("In your cart, you have " + output + ".");
+    console.log("In your cart, you have " + string + ".");
   }
 };
 
