@@ -1,4 +1,4 @@
-"use scrict";
+"use strict";
 var cart = [];
 
 function setCart(newCart) {
@@ -30,13 +30,12 @@ function addToCart(item){
 };
 
 function viewCart(){
-  var item;
   if (cart.length < 1){
     console.log("Your shopping cart is empty.");
   }
   else{
     for(var i=0; i < cart.length; i++){
-      for (item in cart[i]){
+      for (var item in cart[i]){
         console.log (`In your cart you have [${item} and ${cart[i][item]} pairs].`);
       }
     }
