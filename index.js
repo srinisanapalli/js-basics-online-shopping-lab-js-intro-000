@@ -41,7 +41,7 @@ function viewCart(){
         output.push(`${item} at $${cart[i][item]}`);
       }
     }
-    vat string = output.join(", ");
+    var string = output.join(", ");
     console.log("In your cart, you have " + string + ".");
   }
 };
