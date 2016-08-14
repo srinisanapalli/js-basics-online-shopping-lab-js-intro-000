@@ -40,7 +40,7 @@ function viewCart(){
         output+=`${item} at $${cart[i][item]}`;
       }
     }
-    console.log (`In your cart you have [${item} and ${cart[i][item]} pairs].`);
+    console.log (`In your cart you have ${output} pairs.`);
   }
 };
 
