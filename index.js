@@ -54,6 +54,7 @@ function removeFromCart(item){
       }
       else{
         cart.splice(i,1);
+        break;
         //delete cart.prop;
       }
     }
