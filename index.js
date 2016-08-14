@@ -46,17 +46,16 @@ function viewCart(){
 };
 
 function removeFromCart(item){
-
   var flag=false;
   for(var i=0; i < cart.length; i++){
     for (var prop in cart){
       if(cart[prop]==item){
+        //console.log("That item is not in your cart.");
         flag=true;
         cart.splice(i,1);
       }
     }
   }
-
   if (!flag){
     console.log("That item is not in your cart.");
   }
@@ -64,7 +63,7 @@ function removeFromCart(item){
 };
 
 function placeOrder(cardNumber){
-  if (cardNumber){
+  if (typeof(cardNumber)!= 'undefined'){
     console.log(`Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`);
   }
   else{
