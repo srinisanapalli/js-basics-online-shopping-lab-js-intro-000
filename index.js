@@ -30,15 +30,17 @@ function addToCart(item){
 };
 
 function viewCart(){
+  var output;
   if (cart.length < 1){
     console.log("Your shopping cart is empty.");
   }
   else{
     for(var i=0; i < cart.length; i++){
       for (var item in cart[i]){
-        console.log (`In your cart you have [${item} and ${cart[i][item]} pairs].`);
+        output+=`${item} at $${cart[i][item]}`;
       }
     }
+    console.log (`In your cart you have [${item} and ${cart[i][item]} pairs].`);
   }
 };
 
