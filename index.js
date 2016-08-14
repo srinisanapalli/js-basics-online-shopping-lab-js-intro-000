@@ -37,7 +37,6 @@ function viewCart(){
   else{
     for(var i=0; i < cart.length; i++){
       for (var item in cart[i]){
-        //output+=`${item} at $${cart[i][item]}`;
         output.push(`${item} at $${cart[i][item]}`);
       }
     }
@@ -47,15 +46,14 @@ function viewCart(){
 };
 
 function removeFromCart(item){
+  
   for(var i=0; i < cart.length; i++){
     for (var prop in cart){
-      if(!cart[prop]===item){
+      if(!cart[prop]==item){
         console.log("That item is not in your cart.");
       }
       else{
         cart.splice(i,1);
-        break;
-        //delete cart.prop;
       }
     }
   }
