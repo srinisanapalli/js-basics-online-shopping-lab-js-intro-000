@@ -49,7 +49,7 @@ function viewCart(){
 function removeFromCart(item){
   for(var i=0; i < cart.length; i++){
     for (var prop in cart){
-      if(!cart[prop]===item)){
+      if(!cart[prop]===item){
         console.log("That item is not in your cart.");
       }
       else{
