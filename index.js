@@ -50,7 +50,7 @@ function removeFromCart(item){
   var flag=false;
   for(var i=0; i < cart.length; i++){
     for (var prop in cart){
-      if(cart[prop]==item){
+      if(prop==item){
         flag=true;
         cart.splice(i,1);
       }
